@@ -1,0 +1,159 @@
+:root {
+  font-size: 16px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.sec{
+  height: 100vh;
+  width: 100%;
+}
+.sec-1{
+  height: 40vh;
+  width: 100%;
+}
+
+/* styles for the cover page including the navigation. */
+#cover{
+  background: rgba(38, 166, 91,0.7);
+}
+.navigation{
+  padding:1.2rem 0 1.2rem 0;
+  background: rgb(0, 177, 106);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.25rem solid rgba(38, 166, 91,0.5);
+}
+.navigation a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: white;
+}
+#intro-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  /* background: rgba(38, 166, 91,0.3); */
+  color: rgb(236, 240, 241,0.95);
+
+}
+img{
+  border-radius: 50%;
+}
+
+
+/* Styles for the Technologies section */
+
+#Technologies{
+  background: rgba(233,212,96,0.8);
+  color: rgb(102, 51, 153);
+}
+#tech ul {
+  padding-left: 2%;
+}
+#tech ul li{
+  list-style: none;
+  display: block;
+  padding: 1rem;
+  /* background: red; */
+  width: 20%;
+  transition: background 0.51s ease-in;
+}
+
+#tech ul li:nth-child(2n):hover{
+  border: 0.2rem solid rgb(238, 238, 238);
+  color: white;
+  font-weight: bold;
+  background: rgb(108, 122, 137);
+}
+
+
+#tech ul li:nth-child(2n+1):hover{
+  border: 0.2rem solid rgb(108, 122, 137);
+  color: blue;
+  font-weight: bold;
+  background:rgb(238, 238, 238);
+}
+
+/* styles for My works section */
+/* #work{
+  background: rgb(248, 148, 6);
+} */
+#work h1{
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2%;
+}
+
+#port{
+  padding-top: 6%;
+  padding-bottom: 0;
+}
+#port a{
+  padding-left: 4%;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+/* styles for the contact section */
+#contact{
+  background: rgb(0, 177, 106);
+}
+#contact h1{
+  font-size: 4rem;
+  text-align: left;
+  padding-left: 2%;
+  padding-top: 5%;
+  color: white;
+}
+#contact ul{
+  padding-left: 2%;
+  padding-top: 2.5%;
+}
+/* #contact ul h3{
+  font-size: 2rem;
+} */
+#contact ul li{
+  list-style: none;
+  display: inline-block;text-decoration: none;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  color: white;
+}
+#contact ul li  a{
+  text-decoration: none;
+  color: white;
+}
+.create{
+  padding: 1% 0 1% 0;
+  text-align: center;
+  background: rgba(233,212,96,1);
+}
+.create h4{
+
+}
+
+
+
+
+/* MEdia queries */
+
+
+@media screen and (max-width:680px) {
+  .sec-1{
+    height: 42vh;
+  }
+  #contact ul li{
+    display: block;
+    padding-left: 1rem;
+  }
+}
